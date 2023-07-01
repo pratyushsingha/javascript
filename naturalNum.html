@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>natural number</h1>
+    <p>how many numbers u want to print: </p>
+    <input id="num" type="number">
+    <button onclick="calculate()" id="btn">print</button>
+    <div id="result"></div>
+</body>
+<script>
+    const number = document.getElementById("num")
+    const mybtn = document.getElementById("btn")
+    const resultDiv = document.getElementById("result")
+    function calculate(){
+        var num=parseInt(number.value)
+        resultDiv.innerHTML=""
+        var total=0
+        for (var i = 0; i <= num; i++) {
+         total+=i
+        }
+        console.log(total)
+        resultDiv.innerHTML=`<p>${total}</p>`
+        
+    }
+
+</script>
+</html>

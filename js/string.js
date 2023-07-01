@@ -23,7 +23,7 @@ var newString = str.concat(' bu harry')
 console.log(newString)
 
 // to trim white spaces
-var strWithWhiteSpaces = '                   this contents white spaces       ';
+var strWithWhiteSpaces =vs code icons '                   this contents white spaces       ';
 console.log(strWithWhiteSpaces);
 console.log(strWithWhiteSpaces.trim());
 // TO EXTRACT CHARRACTERS

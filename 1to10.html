@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>1to infinite</h1>
+    <p>how many numbers u want to print: </p>
+    <input id="num" type="number">
+    <button onclick="calculate()" id="btn">print</button>
+    <div id="result"></div>
+
+</body>
+<script>
+    const number = document.getElementById("num")
+    const mybtn = document.getElementById("btn")
+    const resultDiv = document.getElementById("result")
+
+    function calculate() {
+        var num = parseInt(number.value)
+        resultDiv.innerHTML = ""
+        for (let i = 0; i <= num; i++) {
+            // console.log(i)
+            resultDiv.innerHTML += `<p>${i}</p>`
+        }
+    }
+</script>
+
+</html>
