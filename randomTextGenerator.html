@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Text Generator</title>
+</head>
+
+<body>
+    <p class="mx-3 my-4 text-2xl font-extrabold flex justify-center items-center">Random Text Generator</p>
+    <div class="flex justify-center items-center">
+        <input
+            class="border rounded leading-tight focus:outline-none focus:shadow-outline px-6 py-4 outline-black bg-gray-300"
+            type="number" placeholder="Enter number of words">
+    </div>
+    <div class="flex justify-center items-center my-3">
+        <button type="submit" class="bg-purple-600 px-4 py-3 text-white font-extrabold"
+            onclick="result()">Generate</button>
+    </div>
+    <div class="result mx-10 my-4 ">
+        <p class=" paras text-gray-700 font-extrabold px-2 py-2 text-justify bg-gray-300 rounded-lg px-4 py-4">
+            sample text: <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sunt, doloremque consectetur molestias laborum
+            impedit? Minus perspiciatis esse deleniti quisquam qui atque, dignissimos modi voluptatum ipsam praesentium
+            porro nam quae repellat earum rem est expedita, facere totam hic labore sunt libero? Voluptate saepe earum
+            quia at labore id impedit dicta!
+        </p>
+    </div>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    const input = document.querySelector('input');
+    const button = document.querySelector('button');
+    const resultDiv = document.querySelector('.result');
+
+    const wordGenerator = (n) => {
+        let text = ""
+        const letters = "abcdefghijklmnopqrstuvwxyz"
+        for (let i = 0; i < n; ++i) {
+            const random = (Math.random() * 25).toFixed(0)
+            text += letters[random]
+        }
+        return text
+    }
+
+    const result = () => {
+        const num = Number(input.value);
+        if (num <= 0) {
+            const para2 = document.createElement('p');
+            para2.innerText = "Please enter a valid number";
+            para2.setAttribute("class", "text-red-500 my-3 font-extrabold px-2 py-2 text-justify bg-gray-300 rounded-lg px-4 py-4")
+            resultDiv.append(para2);
+
+            // resultDiv.innerHTML = `<p class="text-red-500">Please enter a valid number</p>`;
+        }
+        else {
+            const para = document.createElement('p');
+            let data = ""
+            for (let i = 0; i < num; ++i) {
+                const randomNumber = (Math.random() * 15).toFixed(0)
+                data += wordGenerator(randomNumber)
+                data += " "
+            }
+            console.log(data)
+            para.innerText = data;
+
+            para.setAttribute("class", " my-3 text-gray-700 font-extrabold px-2 py-2 text-justify bg-gray-300 rounded-lg px-4 py-4")
+
+            resultDiv.append(para);
+
+        }
+    }
+</script>
+
+</html>
