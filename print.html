@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>print the page</h1>
+    <input type="text">
+    <button type="submit" onclick="printFunc()">print</button>
+    <div></div>
+</body>
+<script>
+    const inputDiv=document.querySelector("input")
+    const btnDiv = document.querySelector("button")
+    const resultDiv = document.querySelector("div")
+    function printFunc() {
+        var text=inputDiv.value;
+        resultDiv.innerHTML=`<b>${text}</b>`
+        // console.log(text)
+        resultDiv.style.color="red"
+        window.print()
+    }
+</script>
+</html>
