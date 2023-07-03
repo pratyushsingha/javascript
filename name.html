@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greet names</title>
+</head>
+
+<body>
+    <h1>name Generator</h1>
+    <input type="text" placeholder="enter ur name">
+    <button type="submit" onclick="nameGenerator()">generate</button>
+    <div></div>
+</body>
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+<script>
+    const inputDiv = document.querySelector('input');
+    const btnDiv = document.querySelector('button');
+    const resultDiv = document.querySelector('div');
+
+    const nameGenerator=()=>{
+        const name=inputDiv.value;
+        resultDiv.innerHTML="";
+        // console.log(name);
+        const para=document.createElement('p');
+        para.innerText=`hello ${name}`;
+        // para.setAttribute=("class", "bg-gray-300 px-4 py-4 rounded-lg");
+        resultDiv.append(para);
+    
+    }
+</script>
+
+</html>
