@@ -1,0 +1,47 @@
+<!-- . Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.  
+[ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ]
+Expected Output :
+60°C is 140 °F
+45°F is 7.222222222222222°C -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Fahrenheit to celcius</h1>
+    <input id="inputFar" type="number">
+    <br>
+    <button id="c">convert</button>
+    <p id="resultC"></p>
+    <h1>celcius to Fahrenheit</h1>
+    <input id="inputFar" type="number">
+    <br>
+    <button id="f">convert</button>
+    <p id="resultF"></p>
+</body>
+<script>
+    const inputF=document.getElementById('inputFar')
+    const inpC=document.getElementById('inputCenti')
+    const centi=document.getElementById('c')
+    const far=document.getElementById('f')
+    const resultDivC=document.getElementById('resultC')
+    const resultDivF=document.getElementById('resultF')
+
+    const res=(()=>{
+        const inputValue=parseInt(inp.value)
+        // console.log(inputValue)
+       const cValue=((inputValue-32)/9)*5
+       resultDivC.innerText=`${cValue}`
+
+
+
+    })
+    centi.addEventListener('click', res)
+</script>
+
+</html>

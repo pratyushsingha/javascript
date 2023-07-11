@@ -1,0 +1,53 @@
+<!-- Write a JavaScript program to calculate multiplication and division of two numbers (input from the user).  
+Sample form :
+sample form -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>1st number: </p>
+    <input type="number" id="firstNumber">
+    <p>2nd number: </p>
+    <input type="number" id="secondNumber">
+    <br>
+    <button id="multiplication">Multiply</button>
+    <button id="division">Divide</button>
+    <p id="resDiv"></p>
+</body>
+<script>
+const f1=document.getElementById('firstNumber');
+const f2=document.getElementById('secondNumber');
+const multiplybtn=document.getElementById('multiplication');
+const dividebtn=document.getElementById('division');
+const resultDiv=document.getElementById('resDiv')
+
+function multiplicationDiv() {
+    const fInput=parseInt(f1.value)
+    // console.log(fInput)
+    const sInput=parseInt(f2.value)
+
+    const res1=fInput*sInput
+    console.log(res1)
+    resultDiv.innerText=`the result is: ${res1}`
+    
+}
+
+function divisionDiv() {
+    const fInput=parseInt(f1.value)
+    // console.log(fInput)
+    const sInput=parseInt(f2.value)
+
+    const res2=fInput/sInput
+    console.log(res2)
+    resultDiv.innerText=`the result is: ${res2}`
+    
+}
+multiplybtn.addEventListener('click',multiplicationDiv)
+dividebtn.addEventListener('click',divisionDiv)
+</script>
+</html>
