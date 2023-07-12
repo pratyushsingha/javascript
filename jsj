@@ -1,0 +1,71 @@
+[33mcommit dd1e5e835be9f180a6fc19d3d5c09221db459ef1[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: pratyushsingha <pratyushsingha83@gmail.com>
+Date:   Wed Jul 12 15:39:54 2023 +0530
+
+    practising and more practising
+
+[33mcommit f0dc9952e846789f1a2f5ca623f24ace1b9153fe[m
+Author: pratyushsingha <pratyushsingha83@gmail.com>
+Date:   Tue Jul 11 22:27:56 2023 +0530
+
+    practising and learning js
+
+[33mcommit 587aa22dd5f0c42fcb6a3cf319e5469785169d97[m
+Author: pratyushsingha <pratyushsingha83@gmail.com>
+Date:   Mon Jul 3 13:01:31 2023 +0530
+
+    name generator
+
+[33mcommit 7daae6f2db8a204c1dd7f185de5ba78b5402310d[m
+Author: pratyushsingha <pratyushsingha83@gmail.com>
+Date:   Mon Jul 3 02:05:37 2023 +0530
+
+    random text generator
+
+[33mcommit 190cd1120eb7c8e1d730478a931c72d8cb01bdca[m
+Author: pratyushsingha <pratyushsingha83@gmail.com>
+Date:   Sun Jul 2 21:29:21 2023 +0530
+
+    advanced array methods
+
+[33mcommit 9fa0f27e182fa01a1034b40596ba727928aca171[m
+Author: pratyushsingha <pratyushsingha83@gmail.com>
+Date:   Sun Jul 2 02:09:58 2023 +0530
+
+    dom manipulation
+
+[33mcommit 62c06002f10e22d8b10715d25b93dac48ba91992[m
+Merge: 3a703e9 ea967d6
+Author: pratyush Singha <pratyushsingha83@gmail.com>
+Date:   Wed Feb 22 13:51:28 2023 +0530
+
+    Merge pull request #2 from pratyushsingha/master
+    
+    second commit
+
+[33mcommit ea967d6086f548abc07f8566736d339c98703236[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: pratyushsingha <pratyushsingha83@gmail.com>
+Date:   Wed Feb 22 13:47:45 2023 +0530
+
+    second commit
+
+[33mcommit 3a703e9c166e276e4db0baf0486510e01f340978[m
+Merge: a32a41b 9436a77
+Author: pratyush Singha <pratyushsingha83@gmail.com>
+Date:   Wed Feb 22 11:21:13 2023 +0530
+
+    Merge pull request #1 from pratyushsingha/master
+    
+    first commit
+
+[33mcommit 9436a774f424896110f9e3f5a2bd1fb1d3b6ef55[m
+Author: pratyushsingha <pratyushsingha83@gmail.com>
+Date:   Wed Feb 22 11:20:40 2023 +0530
+
+    first commit
+
+[33mcommit a32a41be421f4fe025c1b9fb5988f045861d74f2[m
+Author: pratyush Singha <pratyushsingha83@gmail.com>
+Date:   Tue Feb 21 23:35:01 2023 +0530
+
+    Create README.md

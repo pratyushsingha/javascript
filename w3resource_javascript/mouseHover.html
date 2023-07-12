@@ -1,0 +1,37 @@
+<!-- 12. Write a JavaScript program to highlight the bold words of the following paragraph, on mouse over a certain link.
+Sample link and text :
+[On mouse over here bold words of the following paragraph will be highlighted]
+We have just started this section for the users (beginner to intermediate) who want to work with various JavaScript problems and write scripts online to test their JavaScript skill. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>On mouse over here bold words of the following paragraph will be highlighted]</p>
+    <span><strong>We</strong> have just started <strong>this</strong> section for the users (<strong>beginner</strong> to intermediate) who <strong>want</strong> to work with <strong>various</strong> JavaScript <strong>problems</strong> and write scripts online to <strong>test</strong> their JavaScript <strong>skill</strong>.</span>
+
+</body>
+<script>
+    const para = document.querySelector('p')
+    const boldItems =document.getElementsByTagName('strong')
+    para.style.color = 'blue'
+    para.addEventListener('mouseover', () => {
+        for(let i =0;i<boldItems.length;i++){
+            boldItems[i].style.color='red'
+        }
+    })
+    para.addEventListener('mouseleave', () => {
+        for(let i =0;i<boldItems.length;i++){
+            boldItems[i].style.color='black'
+        }
+    })
+
+</script>
+
+</html>
