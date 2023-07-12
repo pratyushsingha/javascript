@@ -1,0 +1,20 @@
+<!-- 12. Write a JavaScript program to get the website URL (loading page).   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>copy the url</button>
+</body>
+<script>
+    const btn=document.querySelector('button')
+   alert(document.URL)
+   const copy=document.URL
+   btn.addEventListener('click',()=>{
+    navigator.clipboard.writeText(copy)
+   })
+</script>
+</html>     

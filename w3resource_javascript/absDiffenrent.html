@@ -1,0 +1,30 @@
+<!-- Write a JavaScript program to get the difference between a given number and 13, if the number is broader than 13 return double the absolute difference.   -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const absDifference = (n) => {
+        const absolute = Math.abs(n - 13)
+
+        if (n>13) {
+            return absolute*2
+        } else {
+            return absolute
+        }
+
+    }
+    console.log(absDifference(15))
+
+
+</script>
+
+</html>
