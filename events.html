@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos quasi libero vitae sed temporibus mollitia
+        voluptatum, quam facere assumenda recusandae rem quia, in voluptatibus corrupti, odit quis pariatur praesentium
+        esse ea architecto aut. In animi necessitatibus rem veniam voluptas sequi facere explicabo ipsa eius pariatur
+        laborum, aperiam, assumenda dolorem, amet dolorum culpa nulla voluptates! Cumque ex numquam architecto
+        consequuntur excepturi officiis illo asperiores eaque quisquam voluptatibus, eius, quaerat nostrum quibusdam
+        assumenda consequatur quae dolorum nisi omnis! Illo deleniti aspernatur corrupti fuga recusandae voluptatem
+        eaque molestiae placeat, fugiat voluptatum voluptatibus numquam perferendis soluta beatae odit omnis sit?
+        Dolorem, dignissimos ratione.</p>
+    <button>show/hide</button>
+
+</body>
+<script>
+    const h1 = document.querySelector("h1")
+    const para = document.querySelector("p")
+    const btn = document.querySelector("button")
+
+
+    btn.addEventListener("click", () => {
+        if (para.style.display != 'none') {
+
+            para.style.display = "none"
+        }
+        else{
+        para.style.display='block'
+        }
+    })
+</script>
+
+</html>

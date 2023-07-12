@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<span id="time"></span>
+
+<body>
+
+</body>
+<script>
+    // const greet = () => {
+    //     alert("hellow pratyush")
+    // }
+    // setTimeout(greet,2000)
+    const displayTime = () => {
+        time = new Date()
+        document.getElementById("time").innerHTML = time
+    }
+    setInterval(displayTime, 1000);
+</script>
+
+</html>

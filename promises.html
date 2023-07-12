@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // const a = new Promise((resolve, reject) => {
+
+    //     let success=true
+    //     if(success) resolve("promise fulfilled")
+    //     else reject("some technical error")
+    //     // resolve("promise rejected")
+    //     // resolve("promise fulfilled")
+    //     // reject("some technical error")
+    // })
+
+    // a.then((parameter) => {
+    //     console.log(parameter)
+    // }).catch((error)=>{
+    //     console.log(error)
+    // })
+    const arr = []
+    const fetchData = (arr = []) => {
+        return new Promise((reject, resolve) => {
+            setTimeout(() => {
+                arr.push({ name: "pratyush" })
+                if (arr.length > 0) {
+                    resolve("data fetched")
+                }
+                else {
+                    reject("some technical error")
+                }
+            }, 2000)
+        })
+    }
+
+    fetchData(arr)
+        .then((message) => console.log(message))
+        .catch((message) => console.log(message))
+        .finally(()=> console.log("will work either eay"));
+</script>
+
+</html>
