@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="input">
+    <button id="btn">weather report</button>
+    <p id="results"></p>
+</body>
+<script>
+    const inputText = document.getElementById('input')
+    const btn = document.getElementById('btn')
+    const results = document.getElementById('results')
+    btn.addEventListener('click', () => {
+        const inputVal = inputText.value
+        console.log(inputVal)
+        let p = fetch(`https://goweather.herokuapp.com/weather/${inputVal}`)
+        p.then((value1) => {
+            console.log(value1.status)
+            console.log(value1.ok)
+            return value1.json()
+        }).then((value2) => {
+            console.log(value2)
+            results.textContent = `weather in ${inputVal} : ${value2.temperature}`
+        })
+    })
+
+</script>
+
+</html>

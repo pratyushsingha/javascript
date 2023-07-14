@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>GitHub User Search</h1>
+    <input type="text" id="username" placeholder="Enter GitHub username" />
+    <button id="search" type="submit">Search</button>
+    <div id="results"></div>
+    <img src="" id="profile_pic">
+</body>
+<script>
+    const usernameText = document.getElementById('username')
+    const btn = document.getElementById('search')
+    const results = document.getElementById('results')
+    const profile_pic = document.getElementById('profile_pic')
+
+    btn.addEventListener('click', () => {
+        const usernameVal = usernameText.value
+        console.log(usernameVal)
+        const p = fetch(`https://api.github.com/users/${usernameVal}`)
+        p.then((Response) => {
+            return Response.json()
+        }).then((data) => {
+            console.log(data)
+            results.textContent = `username:${data.login}`
+            profile_pic.src = data.avatar_url
+
+        })
+            .catch(error => {
+                console.error("data cant be fetched")
+            })
+    })
+</script>
+
+</html>
