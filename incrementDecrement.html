@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="minus">-</button>
+    <input type="number" value="0">
+    <button id="plus">+</button>
+</body>
+<script>
+    const plus = document.getElementById('plus')
+    const minus = document.getElementById('minus')
+    let input = document.querySelector('input')
+    let inputValue = parseInt(input.value)
+    // let inputVal = parseInt(input.value)
+    plus.addEventListener('click', () => {
+        // console.log("clicked")
+        // console.log(inputValue+1)
+        inputValue += 1
+        console.log(inputValue)
+        input.value = inputValue
+    })
+    minus.addEventListener('click', () => {
+        // console.log("clicked")
+        // console.log(inputValue+1)
+        inputValue -= 1
+        // console.log(inputValue)
+        input.value = inputValue
+    })
+</script>
+
+</html>
